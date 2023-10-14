@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  @apply m-auto;
+  background: linear-gradient(
+    162deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+}
+input[type="color"] {
+  @apply border-[none];
+  -webkit-appearance: none;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+  @apply p-0;
+}
+input[type="color"]::-webkit-color-swatch {
+  @apply border-[none];
+}
